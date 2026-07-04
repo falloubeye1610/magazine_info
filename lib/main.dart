@@ -177,7 +177,7 @@ class PartieRubrique extends StatelessWidget {
               child: Image.asset(
                 'assets/images/rubrique1.jpg',
                 height: 120,
-                fit: BoxFit.cover,
+                fit: BoxFit.cover, 
               ),
             ),
           ),
