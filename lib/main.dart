@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'views/redacteur_interface.dart';
+import 'views/login_interface.dart';
 
 void main() {
   runApp(const MonApplication());
@@ -18,7 +18,7 @@ class MonApplication extends StatelessWidget {
         colorSchemeSeed: Colors.pink,
         useMaterial3: true,
       ),
-      home: const RedacteurInterface(),
+      home: const LoginInterface(),
     );
   }
 }

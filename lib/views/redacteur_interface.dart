@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../model/redacteur.dart';
 import '../services/database_manager.dart';
+import 'login_interface.dart';
 
 class RedacteurInterface extends StatefulWidget {
   const RedacteurInterface({super.key});
@@ -165,9 +166,15 @@ class _RedacteurInterfaceState extends State<RedacteurInterface> {
         centerTitle: true,
         backgroundColor: Colors.pink,
         foregroundColor: Colors.white,
-        leading: IconButton(icon: const Icon(Icons.menu), onPressed: () {}),
         actions: [
-          IconButton(icon: const Icon(Icons.search), onPressed: () {}),
+          IconButton(
+            icon: const Icon(Icons.logout),
+            tooltip: 'Déconnexion',
+            onPressed: () => Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const LoginInterface()),
+            ),
+          ),
         ],
       ),
       body: Padding(
